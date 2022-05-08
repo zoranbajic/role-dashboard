@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const compression = require('compression');
 
 const path = require('path');
+const { create } = require('domain');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -34,3 +35,17 @@ const startListening = () => {
   // Start listening and create a 'server' object representing our server
   app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 };
+
+const bootApp = () => {
+  createApp();
+  startListening();
+};
+
+// This will evaluate as true when we run this directly from the command line
+// and false when this module is required by another module, for example, if we
+// required it in a test spec
+if (require.main === module) {
+  bootApp();
+} else {
+  createApp();
+}
