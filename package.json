@@ -11,5 +11,8 @@
     "url": "git@github.com-official:zoranbajic/role-dashboard.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
