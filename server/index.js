@@ -3,7 +3,6 @@ const morgan = require('morgan');
 const compression = require('compression');
 
 const path = require('path');
-const { create } = require('domain');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
