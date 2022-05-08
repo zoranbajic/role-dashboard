@@ -13,7 +13,7 @@ const createApp = () => {
   app.use(express.urlencoded({ extended: true }));
 
   // API routes
-  app.use('/api', require('./api'));
+  // app.use('/api', require('./api'));
 
   // Static file-serving middleware
   app.use(express.static(path.join(__dirname, '..', 'public')));
