@@ -2,14 +2,22 @@ const express = require('express');
 const morgan = require('morgan');
 const compression = require('compression');
 
+const db = require('./db');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 const createApp = () => {
+  // Logging middleware
+  // Only use logging middleware when not running tests
+  app.use(morgan('dev'));
+
   // Middleware for body parsing (parse request and create req.body object)
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
+
+  // Compression middleware
+  app.use(compression());
 
   // API routes
   // app.use('/api', require('./api'));
@@ -35,7 +43,10 @@ const startListening = () => {
   app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 };
 
+const syncDb = () => db.sync();
+
 const bootApp = () => {
+  syncDb();
   createApp();
   startListening();
 };
