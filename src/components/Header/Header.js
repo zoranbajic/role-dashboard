@@ -15,16 +15,25 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 
 export default function Header() {
   return (
+    // <Box sx={{ flexGrow: 1 }}>
+    //   <AppBar sx={{ top: 0, left: 0, position: 'fixed' }}>
+    //     <Toolbar>
+    //       <Typography
+    //         variant='h6'
+    //         noWrap
+    //         component='div'
+    //         sx={{ display: { xs: 'none', sm: 'block' } }}
+    //       >
+    //         Role Dashboard
+    //       </Typography>
+    //     </Toolbar>
+    //   </AppBar>
+    // </Box>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar sx={{ top: 0, left: 0, position: 'fixed' }}>
         <Toolbar>
-          <Typography
-            variant='h6'
-            noWrap
-            component='div'
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            Role Dashboard
+          <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
+            DataPiper Role Dashboard
           </Typography>
         </Toolbar>
       </AppBar>
