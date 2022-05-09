@@ -6,8 +6,8 @@ const Skill = require('./skill');
 Client.hasMany(Contact);
 Contact.belongsTo(Client);
 
-Contact.hasMany(Role);
-Role.belongsTo(Contact);
+Client.hasMany(Role);
+Role.belongsTo(Client);
 
 Role.belongsToMany(Skill, { through: 'RoleSkills' });
 Skill.belongsToMany(Role, { through: 'RoleSkills' });
