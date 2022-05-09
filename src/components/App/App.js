@@ -1,6 +1,7 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../Header/Header';
+import Content from '../Content/Content';
 
 // Change the primary and secondary colors
 const theme = createTheme({
@@ -19,6 +20,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div>
         <Header />
+        <Content />
       </div>
     </ThemeProvider>
   );
