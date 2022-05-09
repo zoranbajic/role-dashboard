@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('@sequelize/core');
 const db = require('../db');
 
-const Skill = db.define('client', {
+const Skill = db.define('skill', {
   name: {
     type: DataTypes.STRING,
     allowNull: false,

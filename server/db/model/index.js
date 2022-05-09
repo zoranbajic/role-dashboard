@@ -1,5 +1,5 @@
 const Client = require('./client');
-const Contact = require('./client');
+const Contact = require('./contact');
 const Role = require('./role');
 const Skill = require('./skill');
 
