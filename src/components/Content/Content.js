@@ -593,7 +593,7 @@ export default function Content() {
               selectOnFocus
               clearOnBlur
               handleHomeEndKeys
-              id='client'
+              id='skills'
               options={clientOptions}
               getOptionLabel={(option) => {
                 // Value selected with enter, right from the input
@@ -612,7 +612,7 @@ export default function Content() {
               )}
               sx={{ width: 200 }}
               freeSolo
-              renderInput={(params) => <TextField {...params} label='Client' />}
+              renderInput={(params) => <TextField {...params} label='Skills' />}
             />
           </Grid>
         </Grid>
