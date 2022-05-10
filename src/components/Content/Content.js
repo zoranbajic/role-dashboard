@@ -277,7 +277,7 @@ export default function Content() {
             width: '100%',
           }}
         >
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={12} sm={2}>
             <Autocomplete
               value={clientValue}
               onChange={(event, newValue) => {
@@ -336,7 +336,7 @@ export default function Content() {
               renderInput={(params) => <TextField {...params} label='Client' />}
             />
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={12} sm={2}>
             <Autocomplete
               value={contactValue}
               onChange={(event, newValue) => {
@@ -439,7 +439,7 @@ export default function Content() {
               </form>
             </Dialog>
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={12} sm={2}>
             <Autocomplete
               value={roleValue}
               onChange={(event, newValue) => {
@@ -556,7 +556,7 @@ export default function Content() {
               </form>
             </Dialog>
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={12} sm={2}>
             <Autocomplete
               value={skillsValue}
               onChange={(event, newValue) => {
@@ -614,6 +614,9 @@ export default function Content() {
               freeSolo
               renderInput={(params) => <TextField {...params} label='Skills' />}
             />
+          </Grid>
+          <Grid item xs={12} sm={2}>
+            <Button variant='contained'>Submit</Button>
           </Grid>
         </Grid>
       </Box>
