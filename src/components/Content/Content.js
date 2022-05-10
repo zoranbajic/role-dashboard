@@ -53,7 +53,7 @@ const rows = [
     role: 'Core Senior Software Developer - Senior Associate',
     role: 'High',
     quantity: 1,
-    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microserices',
+    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microservices',
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ const rows = [
     role: 'Core Senior Software Developer - Senior Associate',
     role: 'High',
     quantity: 1,
-    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microserices',
+    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microservices',
   },
   {
     id: 3,
@@ -83,7 +83,7 @@ const rows = [
     role: 'Datavault 2.0',
     role: 'High',
     quantity: 1,
-    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microserices',
+    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microservices',
   },
   {
     id: 5,
@@ -113,7 +113,7 @@ const rows = [
     role: 'Core Senior Software Developer - Senior Associate',
     role: 'High',
     quantity: 1,
-    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microserices',
+    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microservices',
   },
   {
     id: 8,
@@ -123,7 +123,7 @@ const rows = [
     role: 'Core Senior Software Developer - Senior Associate',
     role: 'High',
     quantity: 1,
-    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microserices',
+    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microservices',
   },
   {
     id: 9,
@@ -143,7 +143,7 @@ const rows = [
     role: 'Datavault 2.0',
     role: 'High',
     quantity: 1,
-    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microserices',
+    skillsNeeded: 'Java, Springboot Docker/Kubernetes, API/microservices',
   },
   {
     id: 11,
